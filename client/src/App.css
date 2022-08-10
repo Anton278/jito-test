@@ -9,3 +9,14 @@ h2 {
 .cards-wrapp {
     margin-right: 2rem;
 }
+
+@media (max-width: 650px) {
+    .wrapp {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .cards-wrapp {
+        grid-row: 2/3;
+        margin-right: 0;
+    }
+}

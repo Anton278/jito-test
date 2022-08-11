@@ -9,7 +9,7 @@ const Results = () => {
     return (
         <div className="results">
             <h4 className="results__title">Results</h4>
-            <ul className="results__list">
+            <ul className="results__list" data-testid="resultsList">
                 {results.map((horseName: string) => (
                     <li key={horseName} className="results__list-item">
                         {horseName}

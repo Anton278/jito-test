@@ -70,7 +70,7 @@ const App: React.FC = () => {
             <h1>Horse betting status</h1>
             {raceStatus === "finished" ? <h2>The race is over!</h2> : null}
             <div className="wrapp">
-                <div className="cards-wrapp">
+                <div className="cards-wrapp" data-testid="cardsWrapp">
                     {round.map((horse: Horse) => (
                         <Card {...horse} key={horse.name} />
                     ))}

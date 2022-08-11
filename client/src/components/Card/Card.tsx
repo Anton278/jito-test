@@ -7,8 +7,10 @@ const Card: React.FC<Horse> = (props) => {
     return (
         <>
             <div className="card">
-                <p className="card__title">{name}</p>
-                <p>{distance} / 1000</p>
+                <p className="card__title" data-testid="cardTitle">
+                    {name}
+                </p>
+                <p data-testid="cardDistance">{distance} / 1000</p>
             </div>
             <hr />
         </>
